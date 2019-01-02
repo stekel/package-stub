@@ -1,0 +1,32 @@
+{
+    "name": "stekel/{{package-shortname}}",
+    "description": "{{package-description}}",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">7.1",
+        "illuminate/console": "^5.7",
+        "illuminate/support": "^5.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "stekel\\{{package-namespace}}\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "stekel\\{{package-namespace}}\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "stekel\\{{package-namespace}}\\{{package-namespace}}ServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
