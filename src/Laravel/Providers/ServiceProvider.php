@@ -1,6 +1,6 @@
 <?php
 
-namespace stekel\{{package-namespace}};
+namespace stekel\{{package-namespace}}\Laravel\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use stekel\{{package-namespace}}\Laravel\Console\{{package-namespace}} as {{package-namespace}}Command;
